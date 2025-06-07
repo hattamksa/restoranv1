@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "name": "Nasi Goreng Spesial",
+    "image": "images/nasi-goreng.jpg",
+    "shortDescription": "Nasi goreng dengan telur, ayam, dan sayuran",
+    "description": "Nasi goreng spesial dengan campuran telur, potongan ayam, udang, dan sayuran segar. Disajikan dengan kerupuk dan acar.",
+    "price": 35000,
+    "category": "Main Course"
+  },
+  {
+    "id": 2,
+    "name": "Mie Goreng",
+    "image": "images/mie-goreng.jpg",
+    "shortDescription": "Mie goreng dengan telur dan sayuran",
+    "description": "Mie goreng lezat dengan campuran telur, potongan ayam, bakso, dan sayuran segar. Disajikan dengan kerupuk dan acar.",
+    "price": 30000,
+    "category": "Main Course"
+  },
+  {
+    "id": 3,
+    "name": "Ayam Bakar",
+    "image": "images/ayam-bakar.jpg",
+    "shortDescription": "Ayam bakar dengan bumbu khas",
+    "description": "Ayam bakar dengan bumbu khas yang meresap sampai ke dalam. Disajikan dengan nasi, lalapan, dan sambal.",
+    "price": 45000,
+    "category": "Main Course"
+  },
+  {
+    "id": 4,
+    "name": "Sate Ayam",
+    "image": "images/sate-ayam.jpg",
+    "shortDescription": "Sate ayam dengan bumbu kacang",
+    "description": "Sate ayam 10 tusuk dengan bumbu kacang yang kental dan lezat. Disajikan dengan lontong atau nasi.",
+    "price": 35000,
+    "category": "Appetizer"
+  },
+  {
+    "id": 5,
+    "name": "Gado-gado",
+    "image": "images/gado-gado.jpg",
+    "shortDescription": "Sayuran segar dengan bumbu kacang",
+    "description": "Campuran sayuran segar seperti kol, tauge, kentang, telur, dan tahu dengan siraman bumbu kacang yang kental.",
+    "price": 25000,
+    "category": "Appetizer"
+  },
+  {
+    "id": 6,
+    "name": "Soto Ayam",
+    "image": "images/soto-ayam.jpg",
+    "shortDescription": "Sup ayam dengan kuah kuning",
+    "description": "Sup ayam dengan kuah kuning yang gurih, berisi potongan ayam, telur, tauge, dan bihun. Disajikan dengan nasi dan sambal.",
+    "price": 30000,
+    "category": "Soup"
+  },
+  {
+    "id": 7,
+    "name": "Es Teh Manis",
+    "image": "images/es-teh.jpg",
+    "shortDescription": "Teh manis dingin",
+    "description": "Teh manis yang disajikan dingin dengan es batu. Minuman penyegar yang cocok untuk menemani makanan.",
+    "price": 8000,
+    "category": "Beverage"
+  },
+  {
+    "id": 8,
+    "name": "Jus Alpukat",
+    "image": "images/jus-alpukat.jpg",
+    "shortDescription": "Jus alpukat segar",
+    "description": "Jus alpukat segar dengan tambahan susu kental manis. Minuman sehat dan lezat.",
+    "price": 15000,
+    "category": "Beverage"
+  },
+  {
+    "id": 9,
+    "name": "Pisang Goreng",
+    "image": "images/pisang-goreng.jpg",
+    "shortDescription": "Pisang goreng dengan tepung crispy",
+    "description": "Pisang raja yang digoreng dengan tepung crispy. Disajikan dengan taburan gula halus atau keju.",
+    "price": 20000,
+    "category": "Dessert"
+  },
+  {
+    "id": 10,
+    "name": "Es Campur",
+    "image": "images/es-campur.jpg",
+    "shortDescription": "Campuran buah dengan es serut dan sirup",
+    "description": "Campuran buah-buahan segar dengan es serut, sirup, dan susu kental manis. Dessert segar untuk penutup makan.",
+    "price": 18000,
+    "category": "Dessert"
+  },
+  {
+    "id": 11,
+    "name": "Rendang",
+    "image": "images/rendang.jpg",
+    "shortDescription": "Daging sapi dengan bumbu rendang",
+    "description": "Daging sapi yang dimasak dengan bumbu rendang khas Padang. Disajikan dengan nasi putih.",
+    "price": 50000,
+    "category": "Main Course"
+  },
+  {
+    "id": 12,
+    "name": "Bakso",
+    "image": "images/bakso.jpg",
+    "shortDescription": "Bakso daging sapi dengan kuah",
+    "description": "Bakso daging sapi dengan kuah kaldu yang gurih. Disajikan dengan mie, tahu, bihun, dan tauge.",
+    "price": 25000,
+    "category": "Soup"
+  }
+]
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Restoran Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Restoran Nusantara</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#about">Tentang Kami</a></li>
+                    <li><a href="index.html#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <h2 class="section-title">Checkout</h2>
+            <div class="checkout-container">
+                <div class="order-summary">
+                    <h3>Ringkasan Pesanan</h3>
+                    <div class="order-items" id="order-items">
+                        <!-- Order items will be added here via JavaScript -->
+                    </div>
+                    <div class="order-total">
+                        <span>Total:</span>
+                        <span id="order-total">Rp 0</span>
+                    </div>
+                </div>
+                <div class="checkout-form">
+                    <h3>Informasi Pesanan</h3>
+                    <form id="checkout-form">
+                        <div class="form-section">
+                            <h4>Waktu Pesanan</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="order-day">Pilih Hari</label>
+                                    <select id="order-day" required>
+                                        <option value="">Pilih Hari</option>
+                                        <option value="today">Hari Ini</option>
+                                        <option value="tomorrow">Besok</option>
+                                        <option value="day-after-tomorrow">Lusa</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order-time">Pilih Jam</label>
+                                    <select id="order-time" required>
+                                        <option value="">Pilih Jam</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="21:00">21:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h4>Informasi Pelanggan</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customer-name">Nama</label>
+                                    <input type="text" id="customer-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customer-phone">Nomor Telepon</label>
+                                    <input type="tel" id="customer-phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-address">Alamat</label>
+                                <input type="text" id="customer-address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-notes">Catatan Tambahan</label>
+                                <textarea id="customer-notes"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h4>Metode Pembayaran</h4>
+                            <div class="payment-methods">
+                                <div class="payment-method">
+                                    <input type="radio" id="payment-cod" name="payment-method" value="cod" checked>
+                                    <label for="payment-cod">Cash on Delivery</label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="payment-transfer" name="payment-method" value="transfer">
+                                    <label for="payment-transfer">Transfer Bank</label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="payment-ewallet" name="payment-method" value="ewallet">
+                                    <label for="payment-ewallet">E-Wallet</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn order-btn">Pesan Sekarang</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Restoran Nusantara</h3>
+                    <p>Nikmati kelezatan masakan Indonesia</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#menu">Menu</a></li>
+                        <li><a href="index.html#about">Tentang Kami</a></li>
+                        <li><a href="index.html#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Restoran Nusantara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-success-modal">&times;</span>
+            <div class="success-message">
+                <i class="fas fa-check-circle" style="font-size: 60px; color: #4CAF50; margin-bottom: 20px;"></i>
+                <h2>Pesanan Berhasil!</h2>
+                <p>Terima kasih telah memesan di Restoran Nusantara. Pesanan Anda telah diterima dan akan segera diproses.</p>
+                <p>Ringkasan pesanan telah dikirim ke email Anda.</p>
+                <a href="index.html" class="btn" style="margin-top: 20px;">Kembali ke Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/checkout.js"></script>
+</body>
+</html>
+
