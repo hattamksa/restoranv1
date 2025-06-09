@@ -198,14 +198,16 @@ function handleFormSubmit(event) {
         totalBelanja = document.getElementById('order-total').textContent;
         message += `\nTotal: ${totalBelanja}`;
         message += `\nHari :  ${Hari} dan di jam ${Jam}`;
-     clearCart();
+   
     //  console.log('Order submitted:', formData);
     const encodedMessage = encodeURIComponent(message);
+    // Clear cart
+    clearCart();
     window.location.href = `https://wa.me/6287886425562?text=${encodedMessage}`;
     // In a real application, you would send this data to a server
     
 
-    // Clear cart
+    
 
 
     // Show success modal
