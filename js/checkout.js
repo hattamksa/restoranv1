@@ -171,7 +171,7 @@ function handleFormSubmit(event) {
         customerEmail = document.getElementById('customer-email').value
         customerNotes = document.getElementById('customer-notes').value
         const items = cartItems
-        console.log(items)
+        // console.log(items)
     const formData = {
         orderDay: orderDaySelect.value,
         orderTime: orderTimeSelect.value,
@@ -189,13 +189,19 @@ function handleFormSubmit(event) {
                 message += `Address: ${customerAddress}\n`;
                 message += `Phone: ${customerPhone}\n\n`;
                 message += `Order Details:\n`;
-        //  cart.forEach(item => {
-        //             message += `- ${item.product.name} x${item.quantity}: ${formatPrice(item.product.price * item.quantity)}\n`;
-        //         });
+        // cart = [];
+         cartItems.forEach(item => {
+                    message += `- ${item.name} x${item.quantity}: ${formatPrice(item.price * item.quantity)}\n`;
+                });
+        Hari = document.getElementById('order-day').value;
+        Jam = document.getElementById('order-time').value;
+        totalBelanja = document.getElementById('order-total').textContent;
+        message += `\nTotal: ${totalBelanja}`;
+        message += `\nHari :  ${Hari} dan di jam ${Jam}`;
      clearCart();
-     console.log('Order submitted:', formData);
+    //  console.log('Order submitted:', formData);
     const encodedMessage = encodeURIComponent(message);
-    // window.location.href = `https://wa.me/6287886425562?text=${encodedMessage}`;
+    window.location.href = `https://wa.me/6287886425562?text=${encodedMessage}`;
     // In a real application, you would send this data to a server
     
 
@@ -204,6 +210,13 @@ function handleFormSubmit(event) {
 
     // Show success modal
     // showSuccessModal();
+}
+function formatPrice(price) {
+                return new Intl.NumberFormat('id-ID', {
+                    style: 'currency',
+                    currency: 'IDR',
+                    minimumFractionDigits: 0
+                }).format(price);
 }
 
 // Event Listeners
