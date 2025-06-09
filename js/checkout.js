@@ -161,7 +161,7 @@ function hideSuccessModal() {
 
 // Handle form submission
 function handleFormSubmit(event) {
-    alert('sdfsd')
+
     event.preventDefault();
 
     // Get form data
@@ -170,6 +170,8 @@ function handleFormSubmit(event) {
         customerAddress = document.getElementById('customer-address').value
         customerEmail = document.getElementById('customer-email').value
         customerNotes = document.getElementById('customer-notes').value
+        const items = cartItems
+        console.log(items)
     const formData = {
         orderDay: orderDaySelect.value,
         orderTime: orderTimeSelect.value,
