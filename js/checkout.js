@@ -190,15 +190,18 @@ function handleFormSubmit(event) {
         //  cart.forEach(item => {
         //             message += `- ${item.product.name} x${item.quantity}: ${formatPrice(item.product.price * item.quantity)}\n`;
         //         });
+     clearCart();
+     console.log('Order submitted:', formData);
+    const encodedMessage = encodeURIComponent(message);
     window.location.href = `https://wa.me/6287886425562?text=${encodedMessage}`;
     // In a real application, you would send this data to a server
-    console.log('Order submitted:', formData);
+    
 
     // Clear cart
-    clearCart();
+
 
     // Show success modal
-    showSuccessModal();
+    // showSuccessModal();
 }
 
 // Event Listeners
