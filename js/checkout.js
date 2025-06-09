@@ -195,7 +195,7 @@ function handleFormSubmit(event) {
      clearCart();
      console.log('Order submitted:', formData);
     const encodedMessage = encodeURIComponent(message);
-    window.location.href = `https://wa.me/6287886425562?text=${encodedMessage}`;
+    // window.location.href = `https://wa.me/6287886425562?text=${encodedMessage}`;
     // In a real application, you would send this data to a server
     
 
